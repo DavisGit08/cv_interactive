@@ -1,6 +1,6 @@
 body {
   /*background: linear-gradient(to bottom, #3beaf7, #c7fffc);*/
-  background-image: url('images\\background2.jpg');
+  background-image: url('images\\background4.png');
   background-size:cover;
   height: 100vh;
   margin: 0;
@@ -11,9 +11,9 @@ body {
 
 .header {
   font-family: Courier New, monospace;
-  /*font-size: medium;*/
+  font-size: medium;
   color: #473737;
-  width: 60%;
+  width: 50%;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -58,7 +58,7 @@ body {
   font-family: Courier New, monospace;
   font-size: medium;
   color: #473737;
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.8) 100%);
+  background: radial-gradient(circle, #ffffff 0%, #e4e9e9 50%, rgba(134, 134, 134, 0.9) 100%);
   position: fixed;
   top: 50%;
   right: 20%;
@@ -94,18 +94,18 @@ body {
 }
 
 .section-title:hover {
-  color: white;
+  color: red;
   background-color: transparent;
   font-size:larger;
 }
 
 .section-title.clicked {
-  color: white;
+  color: red;
   background-color: transparent;
 }
 
 .first-section .section-title {
-  color: #fff;
+  color: red;
 }
 
 .social-links-container {
