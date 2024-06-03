@@ -1,5 +1,6 @@
 body {
-  background: linear-gradient(to bottom, #3beaf7, #c7fffc);
+  /*background: linear-gradient(to bottom, #3beaf7, #c7fffc);*/
+  background-image: url('images\\sky.png');
   height: 100vh;
   margin: 0;
   display: flex;
@@ -9,7 +10,7 @@ body {
 
 .header {
   font-family: Courier New, monospace;
-  font-size: medium;
+  /*font-size: medium;*/
   color: #473737;
   width: 60%;
   text-align: center;
@@ -17,14 +18,30 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.david-image {
+  position: fixed;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 400px;
+  background-image: url('images/yao.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1
 }
 
 .container {
   font-family: Arial, sans-serif;
-  font-size: small;
+  /*font-size: small;*/
   color: #e02b2b;
   width: 60%;
   padding: 20px;
+  z-index: 10;
 }
 
 @keyframes moveFromRight {
@@ -53,27 +70,31 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   z-index: 999;
   animation: moveFromRight 2s ease-out forwards;
+  z-index: 10;
 }
 
 .section-group {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+}
+
+.section {
+  margin-bottom: -40px; /* Adjust distance between rows */
 }
 
 .section-title {
+  font-size:20px;
   cursor: pointer;
   position: relative;
   transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, font-size 0.3s;
-  color: #007bff;
+  color: #25588f;
   padding: 10px;
 }
 
 .section-title:hover {
   color: white;
   background-color: transparent;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  font-size: smaller;
+  font-size:larger;
 }
 
 .section-title.clicked {
@@ -81,17 +102,32 @@ body {
   background-color: transparent;
 }
 
+.first-section .section-title {
+  color: #fff;
+}
+
 .social-links-container {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .social-link {
-  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.social-icon {
-  width: 30px;
-  height: auto;
+.social-link.linkedin {
+  background-image: url('images/linkedin_icon.png');
 }
+
+.social-link.github {
+  background-image: url('images/github_icon.png'); 
+}
+
