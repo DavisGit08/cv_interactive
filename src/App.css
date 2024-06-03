@@ -1,6 +1,7 @@
 body {
   /*background: linear-gradient(to bottom, #3beaf7, #c7fffc);*/
-  background-image: url('images\\sky.png');
+  background-image: url('images\\background2.jpg');
+  background-size:cover;
   height: 100vh;
   margin: 0;
   display: flex;
@@ -46,10 +47,10 @@ body {
 
 @keyframes moveFromRight {
   0% {
-    transform: translateX(100%) translateY(-50%);
+    transform: translateX(100%) translateY(-50%) scale(0.1);
   }
   100% {
-    transform: translateX(0) translateY(-50%);
+    transform: translateX(0) translateY(-50%) scale(1);
   }
 }
 
@@ -57,19 +58,20 @@ body {
   font-family: Courier New, monospace;
   font-size: medium;
   color: #473737;
-  background: linear-gradient(to bottom, #f8628f, #f7b3b3);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.8) 100%);
   position: fixed;
   top: 50%;
   right: 20%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.5);
   padding: 20px;
   width: 60%;
   height: 70%;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 50px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   z-index: 999;
   animation: moveFromRight 2s ease-out forwards;
+  overflow-y:auto;
   z-index: 10;
 }
 

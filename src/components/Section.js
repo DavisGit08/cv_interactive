@@ -1,19 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Section = ({ title, children, onClick }) => {
-  const [isClicked, setIsClicked] = useState(false);
-
+const Section = ({ title, children, onClick, isActive }) => {
   const handleToggle = () => {
-    setIsClicked(!isClicked);
     onClick(title); // Notifica al padre que este título se ha clicado
   };
 
   return (
     <section className="section">
-      <h2 className={`section-title ${isClicked ? 'clicked' : ''}`} onClick={handleToggle}>
+      <h2 className={`section-title ${isActive ? 'clicked' : ''}`} onClick={handleToggle}>
         {title}
       </h2>
-      {isClicked && (
+      {isActive && (
         <div className="content-container">
           <div className="content">{children}</div>
         </div>
