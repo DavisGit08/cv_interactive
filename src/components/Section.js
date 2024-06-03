@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
-const Section = ({ title, children }) => {
+const Section = ({ title, children, onClick }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleToggle = () => {
     setIsClicked(!isClicked);
+    onClick(title); // Notifica al padre que este título se ha clicado
   };
 
   return (
