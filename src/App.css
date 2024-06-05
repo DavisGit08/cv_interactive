@@ -7,11 +7,13 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  border: none;
 }
 
-.header {
+.header-text {
   font-family: Courier New, monospace;
   font-size: medium;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   color: #473737;
   width: 50%;
   text-align: center;
@@ -19,20 +21,22 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: none;
   z-index: 10;
 }
 
-.david-image {
+.header-image {
   position: fixed;
   top: 50%;
-  left: 5%;
+  left: 0%;
   transform: translateY(-50%);
-  width: 400px;
-  height: 400px;
-  background-image: url('images/yao.jpg');
-  background-size: contain;
+  width: 40%;
+  height: 80%;
+  background-image: url('images/foto.jpg');
+  background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
+  border: none;
   z-index: 1
 }
 
@@ -55,11 +59,15 @@ body {
 }
 
 .content-container {
-  font-family: Courier New, monospace;
+  font-family:Arial, Helvetica, sans-serif;
   font-size: medium;
   color: #473737;
-  background: radial-gradient(circle, #ffffff 0%, #e4e9e9 50%, rgba(134, 134, 134, 0.9) 100%);
-  position: fixed;
+  display: flex;
+  /*background: radial-gradient(circle, #ffffff 0%, #e4e9e9 50%, rgba(134, 134, 134, 0.9) 100%);
+  position: fixed;*/
+  background-image: url('images\\background4.png');
+  background-size:cover;
+  position:absolute;
   top: 50%;
   right: 20%;
   transform: translate(-50%, -50%) scale(0.5);
@@ -68,7 +76,7 @@ body {
   height: 70%;
   border: 1px solid #ccc;
   border-radius: 50px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
   z-index: 999;
   animation: moveFromRight 2s ease-out forwards;
   overflow-y:auto;
@@ -85,11 +93,11 @@ body {
 }
 
 .section-title {
-  font-size:20px;
+  font-size:x-large;
   cursor: pointer;
   position: relative;
   transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, font-size 0.3s;
-  color: #25588f;
+  color: #478f25;
   padding: 10px;
 }
 
