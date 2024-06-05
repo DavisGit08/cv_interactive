@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DavisGit08/cv_interactive/static/css/main.025af10d.css",
+    "main.js": "/DavisGit08/cv_interactive/static/js/main.daceb84f.js",
+    "static/media/foto.jpg": "/DavisGit08/cv_interactive/static/media/foto.4e4b93b199526069a41b.jpg",
+    "static/media/background4.png": "/DavisGit08/cv_interactive/static/media/background4.90c50123bdbf323c2d4c.png",
+    "index.html": "/DavisGit08/cv_interactive/index.html",
+    "main.025af10d.css.map": "/DavisGit08/cv_interactive/static/css/main.025af10d.css.map",
+    "main.daceb84f.js.map": "/DavisGit08/cv_interactive/static/js/main.daceb84f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.025af10d.css",
+    "static/js/main.daceb84f.js"
+  ]
+}
